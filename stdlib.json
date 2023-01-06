@@ -1,0 +1,541 @@
+{
+  "name": "leguchi/guide",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/message/create/prefix/start.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!start"
+      }
+    },
+    "functions/events/discord/HTML/htmlStart.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "html"
+      }
+    },
+    "functions/events/discord/HTML/htmlPg5.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "next_4"
+      }
+    },
+    "functions/events/discord/HTML/htmlPg4.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "next_3"
+      }
+    },
+    "functions/events/discord/HTML/htmlPg2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "next_1"
+      }
+    },
+    "functions/events/discord/HTML/htmlPg3.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "next_2"
+      }
+    },
+    "functions/events/discord/HTML/htmlPg6.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "next_5"
+      }
+    },
+    "functions/events/discord/HTML/Path/HTML/html.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "all_html"
+      }
+    },
+    "functions/events/discord/message/button/step3CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep3"
+      }
+    },
+    "functions/events/discord/message/button/step3Link.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep3Link"
+      }
+    },
+    "functions/events/discord/message/button/step3LinkSearch.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep3LinkSearch"
+      }
+    },
+    "functions/events/discord/message/button/step3LinkNewResource.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep3LinkNewResource"
+      }
+    },
+    "functions/events/discord/message/button/step3Client.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep3Client"
+      }
+    },
+    "functions/events/discord/message/button/step3RedirectURL.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep3RedirectURL"
+      }
+    },
+    "functions/events/discord/message/button/step3BotToken.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep3BotToken"
+      }
+    },
+    "functions/events/discord/message/button/step4.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep4"
+      }
+    },
+    "functions/events/discord/message/button/step4CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep4"
+      }
+    },
+    "functions/events/discord/message/button/step4CreateCommand.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep4CreateCommand"
+      }
+    },
+    "functions/events/discord/message/button/step5.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep5"
+      }
+    },
+    "functions/events/discord/message/button/step5CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep5"
+      }
+    },
+    "functions/events/discord/message/button/step5Trigger.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep5Trigger"
+      }
+    },
+    "functions/events/discord/message/button/step5Code.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep5Code"
+      }
+    },
+    "functions/events/discord/message/button/step6.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep6"
+      }
+    },
+    "functions/events/discord/message/button/step6CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep6"
+      }
+    },
+    "functions/events/discord/message/button/step6StringFunctions.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep6StringFunctions"
+      }
+    },
+    "functions/events/discord/message/button/step6RegularExpression.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep6RegularExpression"
+      }
+    },
+    "functions/events/discord/message/button/step6Bye.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep6Bye"
+      }
+    },
+    "functions/events/discord/message/button/step6Trial.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep6Trial"
+      }
+    },
+    "functions/events/discord/message/button/step7.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep7"
+      }
+    },
+    "functions/events/discord/message/button/step7CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep7"
+      }
+    },
+    "functions/events/discord/message/button/step7EmbedBuilder.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep7EmbedBuilder"
+      }
+    },
+    "functions/events/discord/message/button/step7CopyCode.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep7CopyCode"
+      }
+    },
+    "functions/events/discord/message/button/step7PasteCode.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep7PasteCode"
+      }
+    },
+    "functions/events/discord/message/button/step8.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep8"
+      }
+    },
+    "functions/events/discord/message/button/step8CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep8"
+      }
+    },
+    "functions/events/discord/message/button/step9.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep9"
+      }
+    },
+    "functions/events/discord/message/button/step9CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep9"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesDMAnswers.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesDM"
+      }
+    },
+    "functions/events/discord/HTML/Path/HTML/html2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "all_html_1"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesRespond.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesRespond"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesEmbeds.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesEmbeds"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesReaction.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesReaction"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesRole.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesRole"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesRoleReaction.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesRoleReaction"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesBan.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesBan"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesRestrictRole.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesRestrictRole"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesRestrictPermissions.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesRestrictPermissions"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesStatus.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesStatus"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesAttachment.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesAttachment"
+      }
+    },
+    "functions/events/discord/HTML/Path/HTML/html3.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "all_html_2"
+      }
+    },
+    "functions/events/discord/HTML/Path/HTML/css.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "all_html_3"
+      }
+    },
+    "functions/events/discord/HTML/Path/HTML/js.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "all_html_4"
+      }
+    },
+    "functions/events/discord/HTML/Path/HTML/external.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "all_html_5"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamplesTranslate.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamplesTranslate"
+      }
+    },
+    "functions/events/discord/message/button/finish.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "finish"
+      }
+    },
+    "functions/events/discord/BOT/botStart.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "bot"
+      }
+    },
+    "functions/events/discord/BOT/botStep1.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "step1"
+      }
+    },
+    "functions/events/discord/BOT/botStep1App.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep1"
+      }
+    },
+    "functions/events/discord/BOT/botStep1Name.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep1Naming"
+      }
+    },
+    "functions/events/discord/BOT/botStep1Add.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep1AddBot"
+      }
+    },
+    "functions/events/discord/message/selectmenu/stepsSelection.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "stepsSelection"
+      }
+    },
+    "functions/events/discord/BOT/botStep1intent.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep1ServerMembersIntent"
+      }
+    },
+    "functions/events/discord/BOT/botStep2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep2"
+      }
+    },
+    "functions/events/discord/BOT/botStep2Name.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep2SelectAccount"
+      }
+    },
+    "functions/events/discord/BOT/botStep2Endpoint.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep2ChangeEndpoint"
+      }
+    },
+    "functions/events/discord/BOT/botStep2Code.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep2Replace"
+      }
+    },
+    "functions/events/discord/BOT/botStep2Save.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextStep2Save"
+      }
+    },
+    "functions/events/discord/message/button/step2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "step2"
+      }
+    },
+    "functions/events/discord/message/button/step3.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "step3"
+      }
+    },
+    "functions/events/discord/message/selectmenu/step9CodeExamples.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "step9CodeExamples"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesDM.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesDM"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesEmbeds.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesEmbeds"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesRespond.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesRespond"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesReaction.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesReaction"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesRole.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesRole"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesRoleReaction.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesRoleReaction"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesBan.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesBan"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesRestrictRole.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesRestrictRole"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesRestrictPermissions.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesRestrictPermissions"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesStatus.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesStatus"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesAttachment.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesAttachment"
+      }
+    },
+    "functions/events/discord/message/button/backStep9CodeExamplesTranslate.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backStep9CodeExamplesTranslate"
+      }
+    },
+    "functions/events/discord/message/button/step10CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "completedReadingStep10"
+      }
+    },
+    "functions/events/discord/message/button/backStep10CompletedReading.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "backCompletedReadingStep10"
+      }
+    },
+    "functions/events/discord/message/button/nextFaq.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextFaq"
+      }
+    },
+    "functions/events/discord/message/button/final.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "nextFinal"
+      }
+    },
+    "functions/events/discord/message/create/prefix/invite.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!invite"
+      }
+    },
+    "functions/events/discord/message/button/htmlStart2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "htmlStart2"
+      }
+    },
+    "functions/events/discord/message/create/prefix/help.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!help"
+      }
+    }
+  }
+}
